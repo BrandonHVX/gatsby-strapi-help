@@ -1,0 +1,35 @@
+section.banner {
+    position: relative;
+    padding: 50px 0;
+    background-blend-mode: multiply;
+    background-color: $theme-primary;
+    background-image: url("../images/bon2.jpg");
+    background-size: 100%;
+    background-position: center center;
+    h2 {
+      font-size: 40px;
+      font-weight: 800;
+      margin-top: 0;
+    }
+    .badges {
+      .badge-link {
+        display: block;
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        img {
+          height: 60px;
+        }
+        @media (min-width: 768px) {
+          display: inline-block;
+          margin-bottom: 0;
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 60px;
+      }
+    }
+  }
